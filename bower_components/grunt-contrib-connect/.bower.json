@@ -1,0 +1,15 @@
+{
+  "name": "grunt-contrib-connect",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-connect",
+  "version": "0.8.0",
+  "_release": "0.8.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.8.0",
+    "commit": "6e1cfba3709e42cb0abae3c12025fac861ed029c"
+  },
+  "_source": "git://github.com/gruntjs/grunt-contrib-connect.git",
+  "_target": "~0.8.0",
+  "_originalSource": "grunt-contrib-connect",
+  "_direct": true
+}

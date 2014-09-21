@@ -1,0 +1,15 @@
+{
+  "name": "grunt-contrib-livereload",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-livereload",
+  "version": "0.1.2",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.2",
+    "commit": "e31d33af3bab69a9fe31a7f5ee99caa0701cf6f0"
+  },
+  "_source": "git://github.com/gruntjs/grunt-contrib-livereload.git",
+  "_target": "~0.1.2",
+  "_originalSource": "grunt-contrib-livereload",
+  "_direct": true
+}

@@ -42,7 +42,9 @@
     "threex.keyboardstate": "*",
     "threex.basiclighting": "*",
     "threex.htmlmixer": "*",
-    "threex.noiseshadermaterial": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip"
+    "threex.noiseshadermaterial": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-livereload": "~0.1.2"
   },
   "dependencies": {
     "threex.universalloader": "*",
@@ -57,6 +59,8 @@
     "threex.keyboardstate": "*",
     "threex.basiclighting": "*",
     "threex.htmlmixer": "*",
-    "threex.noiseshadermaterial": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip"
+    "threex.noiseshadermaterial": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-livereload": "~0.1.2"
   }
 }
