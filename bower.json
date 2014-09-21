@@ -28,5 +28,35 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "threex.universalloader": "*",
+    "threex.domevents": "*",
+    "threex.terrain": "*",
+    "threex.daynight": "*",
+    "threex.objcoord": "*",
+    "threex.videotexture": "*",
+    "threex.vertexanimation": "*",
+    "threex.dynamictexture": "*",
+    "threex.skymap": "*",
+    "threex.keyboardstate": "*",
+    "threex.basiclighting": "*",
+    "threex.htmlmixer": "*",
+    "threex.noiseshadermaterial": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip"
+  },
+  "dependencies": {
+    "threex.universalloader": "*",
+    "threex.domevents": "*",
+    "threex.terrain": "*",
+    "threex.daynight": "*",
+    "threex.objcoord": "*",
+    "threex.videotexture": "*",
+    "threex.vertexanimation": "*",
+    "threex.dynamictexture": "*",
+    "threex.skymap": "*",
+    "threex.keyboardstate": "*",
+    "threex.basiclighting": "*",
+    "threex.htmlmixer": "*",
+    "threex.noiseshadermaterial": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip"
+  }
 }

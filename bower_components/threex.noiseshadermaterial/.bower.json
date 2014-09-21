@@ -1,0 +1,13 @@
+{
+  "name": "threex.noiseshadermaterial",
+  "_cacheHeaders": {
+    "ETag": "\"233f7fe82d444e01baaa1b1f34805a9845947b83\"",
+    "Content-Type": "application/zip",
+    "Content-Disposition": "attachment; filename=threex.noiseshadermaterial-master.zip"
+  },
+  "_release": "e-tag:233f7fe82",
+  "_source": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip",
+  "_target": "*",
+  "_originalSource": "https://github.com/jeromeetienne/threex.noiseshadermaterial/archive/master.zip",
+  "_direct": true
+}

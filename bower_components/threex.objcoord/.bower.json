@@ -1,0 +1,14 @@
+{
+  "name": "threex.objcoord",
+  "homepage": "https://github.com/jeromeetienne/threex.objcoord",
+  "_release": "baaa48a7e3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "baaa48a7e3bb5a3f944cae8dbaabc66d6555a7e2"
+  },
+  "_source": "git://github.com/jeromeetienne/threex.objcoord.git",
+  "_target": "*",
+  "_originalSource": "threex.objcoord",
+  "_direct": true
+}

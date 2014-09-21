@@ -1,0 +1,14 @@
+{
+  "name": "threex.vertexanimation",
+  "homepage": "https://github.com/jeromeetienne/threex.vertexanimation",
+  "_release": "536c287cb4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "536c287cb49e95c19fa9b99cb2245b050847c415"
+  },
+  "_source": "git://github.com/jeromeetienne/threex.vertexanimation.git",
+  "_target": "*",
+  "_originalSource": "threex.vertexanimation",
+  "_direct": true
+}
