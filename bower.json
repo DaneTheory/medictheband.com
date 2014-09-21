@@ -1,0 +1,32 @@
+{
+  "name": "MedicTheBand.com",
+  "version": "0.0.1",
+  "homepage": "http://www.medictheband.com",
+  "authors": [
+    "Branden Dane <Branden@DaneTheory.com>"
+  ],
+  "description": "A website/app for the band Medic",
+  "main": "index.html",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "medic",
+    "band",
+    "danetheory",
+    "threejs",
+    "html5",
+    "nodejs",
+    "3d",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
