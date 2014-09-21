@@ -18,26 +18,28 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         
 <!--SCRIPTS VIA NODEJS-->
-        <script src='vendor/three.js/build/three.js'></script>
-        <script src="vendor/require.js/require.js"></script>
-        <script src="vendor/three.js/examples/js/Detector.js"></script>
-        <script src="vendor/threex.windowresize.js"></script>
-        <script src="bower_components/threex.domevents/threex.domevents.js"></script>
-        <script src="bower_components/threex.domevents/threex.linkify.js"></script>
-        <script src="bower_components/threex.skymap/threex.skymap.js"></script>
-        <script src="bower_components/threex.skymap/threex.texturecube.js"></script>
-        <script src="bower_components/threex.skymap/threex.cubetexturehcross.js"></script>
-        <script src="bower_components/threex.terrain/threex.terrain.js"></script>
-        <script src="bower_components/threex.universalloader/threex.universalloader.js"></script>
-        <script src="bower_components/threex.videotexture/threex.videotexture.js"></script>
-        <script src="bower_components/threex.daynight/threex.daynight.js"></script>
-        <script src="bower_components/threex.noiseshadermaterial/threex.noiseshadermaterial.js"></script>
-        <script src="bower_components/threex.dynamictexture/threex.dynamictexture.js"></script>
-        <script src="bower_components/threex.htmlmixer/threex.htmlmixer.js"></script>
-        <script src="bower_components/threex.objcoord/threex.objcoord.js"></script>
-        <script src="bower_components/threex.vertexanimation/threex.vertexanimation.js"></script>                           
+        <script type="text/javascript" src='vendor/three.js/build/three.js'></script>
+        <script type="text/javascript" src="vendor/require.js/require.js"></script>
+        <script type="text/javascript" src="vendor/three.js/examples/js/Detector.js"></script>
+        <script type="text/javascript" src="vendor/threex.windowresize.js"></script>
+        <script type="text/javascript" src="bower_components/threex.domevents/threex.domevents.js"></script>
+        <script type="text/javascript" src="bower_components/threex.domevents/threex.linkify.js"></script>
+        <script type="text/javascript" src="bower_components/threex.skymap/threex.cubetexturehcross.js"></script>
+        <script type="text/javascript" src="bower_components/threex.skymap/threex.texturecube.js"></script>
+        <script type="text/javascript" src="bower_components/threex.skymap/threex.skymap.js"></script>
+        <script type="text/javascript" src="bower_components/threex.terrain/threex.terrain.js"></script>
+        <script type="text/javascript" src="bower_components/threex.universalloader/threex.universalloader.js"></script>
+        <script type="text/javascript" src="bower_components/threex.videotexture/threex.videotexture.js"></script>
+        <script type="text/javascript" src="bower_components/threex.daynight/threex.daynight.js"></script>
+        <script type="text/javascript" src="bower_components/threex.noiseshadermaterial/threex.noiseshadermaterial.js"></script>
+        <script type="text/javascript" src="bower_components/threex.dynamictexture/threex.dynamictexture.js"></script>
+        <script type="text/javascript" src="bower_components/threex.htmlmixer/threex.htmlmixer.js"></script>
+        <script type="text/javascript" src="bower_components/threex.objcoord/threex.objcoord.js"></script>
+        <script type="text/javascript" src="bower_components/threex.vertexanimation/threex.vertexanimation.js"></script>
+    
+                              
     </head>
-    <body>
+    <body style='margin: 0px; background-color: #bbbbbb; overflow: hidden;'>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -83,7 +85,7 @@
 	    var winResize	= new THREEx.WindowResize(renderer, camera)
 
 	    //////////////////////////////////////////////////////////////////////////////////
-	    //		default 3 points lightning					//
+	    //		default 3 points lightning					                            //
 	    //////////////////////////////////////////////////////////////////////////////////
 	
 	    var ambientLight= new THREE.AmbientLight( 0x020202 )
@@ -96,20 +98,31 @@
 	    scene.add( backLight )		
 
 	    //////////////////////////////////////////////////////////////////////////////////
-	    //		add an object and make it move					//
+	    //		add an object and make it move					                        //
 	    //////////////////////////////////////////////////////////////////////////////////	
 	    var geometry	= new THREE.CubeGeometry( 1, 1, 1);
 	    var material	= new THREE.MeshPhongMaterial();
-	    var mesh	= new THREE.Mesh( geometry, material );
-	    scene.add( mesh );
+	    var cubemesh	= new THREE.Mesh( geometry, material );
+	    scene.add( cubemesh );
 	
 	    onRenderFcts.push(function(delta, now){
 		mesh.rotateX(0.5 * delta);
 		mesh.rotateY(2.0 * delta);		
 	    })
-	
+	    
 	    //////////////////////////////////////////////////////////////////////////////////
-	    //		Camera Controls							//
+	    //		SkyMap via Threex					                                    //
+	    //////////////////////////////////////////////////////////////////////////////////
+
+        
+        var mesh    = THREEx.createSkymap('mars')
+scene.add( mesh )
+				
+
+				
+        
+	    //////////////////////////////////////////////////////////////////////////////////
+	    //		Camera Controls							                                //
 	    //////////////////////////////////////////////////////////////////////////////////
 	    var mouse	= {x : 0, y : 0}
 	    document.addEventListener('mousemove', function(event){
@@ -148,5 +161,7 @@
     })
 </script>
         
+<!--REMOVE BEFORE GOING LIVE-->
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':62182/autorefresh.js"></' + 'script>')</script>
     </body>
 </html>
